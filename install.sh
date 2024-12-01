@@ -6,10 +6,12 @@ system=$1
 AZFiglet(){
     case $system in
      "arch")
-            # sudo pacman -Sy figlet
-            sudo pacman -S figlet
+            #pacman -Sy 
+            sudo pacman -S figlet #figlet
+            sudo pacman -S lolcat #lolcat
+            yay -S boxes #boxes
             #test
-            figlet "Figlet of Success"
+            figlet -f mini "Figlet of Success" | local -f |boxes -d unicornthink
         ;;
     esac
 

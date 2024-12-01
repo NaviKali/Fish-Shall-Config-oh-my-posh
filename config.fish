@@ -10,8 +10,9 @@ function StartMounted
 end
 
 function Weclome
-    figlet "Weclome Posh"
-    figlet -f smslant "By : LiuLei"
+    figlet "Weclome Posh" | lolcat -f
+    figlet -f smslant "By : LiuLei" | lolcat -f
+    figlet -f small "Just Like Do This!" | lolcat -f | boxes -d unicornthink
 end
 
 # Alias
